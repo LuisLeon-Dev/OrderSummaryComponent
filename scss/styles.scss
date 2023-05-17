@@ -1,0 +1,125 @@
+@import 'colors';
+@import 'fonts';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: $red-hat-font;
+    background-color: $pale-violet;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+//Card body
+.card{
+    
+    border-radius: 10px;
+    width: 320px;
+    background-color: #fff;
+
+
+    &__payment{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__img{
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+    }
+
+
+    &__title{
+        font-size: $font-size-20;
+        font-weight: $font-weight-strong;
+        color: $dark-blue;
+        text-align: center;
+        margin-top: 1rem;
+
+    }
+    &__info{
+        text-align: center;
+        color: $desaturated-blue;
+        padding: 1rem 1.5rem;
+        font-weight: 300;
+        
+    }
+    &__plan{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: $very-pale-blue;
+        width: 90%;
+        border-radius: 15px;
+        padding: 10px;
+        
+    }
+    &__subscription-option{
+        color: $desaturated-blue;
+
+        &--bold{
+            font-weight: 700;
+            color: black
+        }
+    }
+
+    &__actions{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        
+    }
+
+    &__actions{
+        margin: 25px 0 25px 0;
+
+        .button{
+            &--confirm{
+                font-weight: 700;
+                box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+            }
+
+            &--cancel{
+                color: $desaturated-blue;
+                font-weight: 700;
+                margin-top: 15px;
+            }
+
+        }
+    }
+
+    
+
+}
+
+.button{
+    border: 0;
+    border-radius: 10px;
+    padding: 1rem;
+    width: 90%;
+    background-color: #fff;
+
+    &--confirm{
+        background-color: $brigth-blue;
+        color: $very-pale-blue;
+    }
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}

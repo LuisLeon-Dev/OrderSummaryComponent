@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background-color: hsl(215, 100%, 91%);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  border-radius: 10px;
+  width: 320px;
+  background-color: #fff;
+}
+.card__payment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card__img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+.card__title {
+  font-size: 20px;
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+  text-align: center;
+  margin-top: 1rem;
+}
+.card__info {
+  text-align: center;
+  color: hsl(224, 23%, 55%);
+  padding: 1rem 1.5rem;
+  font-weight: 300;
+}
+.card__plan {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: hsl(225, 100%, 98%);
+  width: 90%;
+  border-radius: 15px;
+  padding: 10px;
+}
+.card__subscription-option {
+  color: hsl(224, 23%, 55%);
+}
+.card__subscription-option--bold {
+  font-weight: 700;
+  color: black;
+}
+.card__actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card__actions {
+  margin: 25px 0 25px 0;
+}
+.card__actions .button--confirm {
+  font-weight: 700;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+.card__actions .button--cancel {
+  color: hsl(224, 23%, 55%);
+  font-weight: 700;
+  margin-top: 15px;
+}
+
+.button {
+  border: 0;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 90%;
+  background-color: #fff;
+}
+.button--confirm {
+  background-color: hsl(245, 75%, 52%);
+  color: hsl(225, 100%, 98%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/*# sourceMappingURL=styles.css.map */

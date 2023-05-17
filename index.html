@@ -17,31 +17,43 @@
       href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Frontend Mentor | Order summary card</title>
   </head>
   <body>
     <div class="container">
       <div class="card">
-        <div class="card-image">
-          <img src="images/illustration-hero.svg" alt="" />
-          <div class="card-info">
-            <h3 class="card-title">Order Summary</h3>
-            <p class="card-info">
+        <div class="card__header">
+          <img
+            src="images/illustration-hero.svg"
+            alt="person listening to music"
+            class="card__img"
+          />
+          <div class="card__body">
+            <h3 class="card__title">Order Summary</h3>
+            <p class="card__info">
               You can now listen to millions of songs, audiobooks, and podcasts
               on any device anywhere you like!
             </p>
-            <div class="plan">
-              <img src="images/icon-music.svg" alt="" class="plan-icon" />
-              <div class="plan-subscription">
-                <div class="plan-subscription-option"><p>Annual Plan</p></div>
-                <div class="plan-subscription-price"><p>$59.99/year</p></div>
+            <div class="card__payment">
+              <div class="card__plan">
+                <img src="images/icon-music.svg" alt="" class="card__icon" />
+                <div class="card__subscription">
+                  <div
+                    class="card__subscription-option card__subscription-option--bold"
+                  >
+                    <p>Annual Plan</p>
+                  </div>
+                  <div class="card__subscription-option">
+                    <p>$59.99/year</p>
+                  </div>
+                </div>
+                <a href="#" class="card__subscription--change">Change</a>
               </div>
-              <p class="plan-subscription-change">Change</p>
             </div>
-            <div class="buttons">
-              <button class="button-confirm">Proceed to Payment</button>
-              <button class="button-cancel">Cancel Order</button>
+            <div class="card__actions">
+              <button class="button button--confirm">Proceed to Payment</button>
+              <a class="button--cancel">Cancel Order</a>
             </div>
           </div>
         </div>
